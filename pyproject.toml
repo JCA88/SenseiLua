@@ -1,0 +1,18 @@
+[project]
+name = "sensei-lua"
+version = "0.1.0"
+description = "Lightweight Lua static analyzer for learning purposes"
+authors = [{name = "Sensei", email = "sensei@example.com"}]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "-q"
